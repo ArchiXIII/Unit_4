@@ -10,9 +10,16 @@ import java.util.List;
 /**
  * Created by Черный on 12.10.2017.
  */
-@CacheDeclaration
+@CacheDeclaration(name = "firstDB")
 public class FirstDB implements Cache {
-    private List<String> firstList = new ArrayList();
+    private List<String> firstList = null;
+
+    @InjectCache
+    private String cacheName;
+
+    public FirstDB(){
+        firstList = new ArrayList();
+    }
 
     @Override
     public void put(Integer integer, String string) {
