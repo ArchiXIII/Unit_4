@@ -1,8 +1,6 @@
 package main.java.ru.archi.caches;
 
 import main.java.ru.archi.Cache;
-import main.java.ru.archi.CacheDeclaration;
-import main.java.ru.archi.InjectCache;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +8,8 @@ import java.util.List;
 /**
  * Created by Черный on 12.10.2017.
  */
-@CacheDeclaration(name = "firstDB")
 public class FirstDB implements Cache {
     private List<String> firstList = null;
-
-    @InjectCache
-    private String cacheName;
 
     public FirstDB(){
         firstList = new ArrayList();
