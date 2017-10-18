@@ -8,19 +8,19 @@ import java.util.List;
 /**
  * Created by Черный on 12.10.2017.
  */
-public class SecondDB implements Cache {
-    List<String> secondList = new ArrayList();
+public class BlackDataStore implements Cache {
+    List<String> thirdList = new ArrayList();
 
     @Override
     public void put(Integer integer, String string) {
-        if(integer < secondList.size()){
-            secondList.add(integer, string);
+        if(integer < thirdList.size()){
+            thirdList.add(integer, string);
         }
-        secondList.add(string);
+        thirdList.add(string);
     }
 
     @Override
     public String get(Integer integer) {
-        return secondList.get(integer);
+        return thirdList.get(integer);
     }
 }

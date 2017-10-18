@@ -6,6 +6,6 @@ package main.java.ru.archi;
  */
 public class Controller {
     public static void main(String[] args) {
-        ClassInjector.putCache(new ArbitraryObject(1));
+        ClassInjector.putCache(new ArbitraryObject());
     }
 }

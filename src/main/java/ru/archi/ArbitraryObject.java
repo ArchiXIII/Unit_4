@@ -5,16 +5,7 @@ package main.java.ru.archi;
  */
 @CacheDeclaration(name = "ArbitraryObject")
 public class ArbitraryObject {
-    int cacheNumber;
 
     @InjectCache
     private Cache cache;
-
-    public ArbitraryObject(int cacheNumber){
-        this.cacheNumber = cacheNumber;
-    }
-
-    public int getCacheNumber(){
-        return cacheNumber;
-    }
 }
