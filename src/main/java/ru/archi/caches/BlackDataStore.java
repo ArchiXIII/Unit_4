@@ -9,18 +9,18 @@ import java.util.List;
  * Created by Черный on 12.10.2017.
  */
 public class BlackDataStore implements Cache {
-    List<String> thirdList = new ArrayList();
+    List<String> blackList = new ArrayList();
 
     @Override
     public void put(Integer integer, String string) {
-        if(integer < thirdList.size()){
-            thirdList.add(integer, string);
+        if(integer < blackList.size()){
+            blackList.add(integer, string);
         }
-        thirdList.add(string);
+        blackList.add(string);
     }
 
     @Override
     public String get(Integer integer) {
-        return thirdList.get(integer);
+        return blackList.get(integer);
     }
 }

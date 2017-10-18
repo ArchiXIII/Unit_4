@@ -9,22 +9,22 @@ import java.util.List;
  * Created by Черный on 12.10.2017.
  */
 public class GreenDataStore implements Cache {
-    private List<String> firstList = null;
+    private List<String> greenList = null;
 
     public GreenDataStore(){
-        firstList = new ArrayList();
+        greenList = new ArrayList();
     }
 
     @Override
     public void put(Integer integer, String string) {
-        if(integer < firstList.size()){
-            firstList.add(integer, string);
+        if(integer < greenList.size()){
+            greenList.add(integer, string);
         }
-        firstList.add(string);
+        greenList.add(string);
     }
 
     @Override
     public String get(Integer integer) {
-        return firstList.get(integer);
+        return greenList.get(integer);
     }
 }

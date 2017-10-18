@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Target(value= ElementType.FIELD)
 @Retention(value= RetentionPolicy.RUNTIME)
 public @interface InjectCache {
-    String cacheName() default "";
+    String cacheName();
 }

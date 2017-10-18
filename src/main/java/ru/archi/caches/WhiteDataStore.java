@@ -9,18 +9,18 @@ import java.util.List;
  * Created by Черный on 12.10.2017.
  */
 public class WhiteDataStore implements Cache {
-    List<String> secondList = new ArrayList();
+    List<String> whiteList = new ArrayList();
 
     @Override
     public void put(Integer integer, String string) {
-        if(integer < secondList.size()){
-            secondList.add(integer, string);
+        if(integer < whiteList.size()){
+            whiteList.add(integer, string);
         }
-        secondList.add(string);
+        whiteList.add(string);
     }
 
     @Override
     public String get(Integer integer) {
-        return secondList.get(integer);
+        return whiteList.get(integer);
     }
 }
