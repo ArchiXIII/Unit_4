@@ -1,4 +1,4 @@
-package main.java.ru.archi;
+package main.java.ru.archi.model.annotations;
 
 import java.lang.annotation.*;
 

@@ -1,4 +1,4 @@
-package main.java.ru.archi;
+package main.java.ru.archi.controller;
 
 /**
  * Created by Черный on 18.10.2017.

@@ -1,4 +1,4 @@
-package main.java.ru.archi;
+package main.java.ru.archi.model;
 
 /**
  * Created by Черный on 12.10.2017.
