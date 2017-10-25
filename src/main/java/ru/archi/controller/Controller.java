@@ -6,6 +6,7 @@ import main.java.ru.archi.model.Cache;
 import main.java.ru.archi.model.Caches;
 import main.java.ru.archi.model.ClassInjector;
 import main.java.ru.archi.model.exception.InjectCacheException;
+import main.java.ru.archi.model.objects_for_test.ArbitraryObjectHeir;
 
 import java.util.Map;
 
@@ -16,7 +17,8 @@ public class Controller {
     public static void executionProgramLogic(){
         Map<String, Cache> caches = Caches.getObjectsCache();
 
-        ArbitraryObject arbitraryObject = new ArbitraryObject();
+        //ArbitraryObject arbitraryObject = new ArbitraryObject();
+        ArbitraryObject arbitraryObject = new ArbitraryObjectHeir();
 
         ClassInjector injector = new ClassInjector(caches);
         try {

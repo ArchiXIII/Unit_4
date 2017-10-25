@@ -29,7 +29,7 @@ public class ClassInjector {
                 InjectCache a = field.getAnnotation(InjectCache.class);
 
                 for (Map.Entry<String, Cache> entry : caches.entrySet()) {
-                    if (entry.getKey().equals(a.cacheName())) {
+                    if (a != null && entry.getKey().equals(a.cacheName())) {
                         field.set(object, entry.getValue());
                     }
                 }
